@@ -1,9 +1,13 @@
-# Generated from ShExDoc.g4 by ANTLR 4.7.1
+# Generated from ShExDoc.g4 by ANTLR 4.8
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
-from typing.io import TextIO
 import sys
+if sys.version_info[1] > 5:
+	from typing import TextIO
+else:
+	from typing.io import TextIO
+
 
 def serializedATN():
     with StringIO() as buf:
@@ -578,9 +582,10 @@ class ShExDocParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.7.1")
+        self.checkVersion("4.8")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
+
 
 
 
@@ -684,6 +689,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class DirectiveContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -748,6 +754,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class BaseDeclContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -789,6 +796,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class PrefixDeclContext(ParserRuleContext):
 
@@ -837,6 +845,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ImportDeclContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -878,6 +887,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class NotStartActionContext(ParserRuleContext):
 
@@ -934,6 +944,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class StartContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -978,6 +989,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class StartActionsContext(ParserRuleContext):
 
@@ -1030,6 +1042,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class StatementContext(ParserRuleContext):
 
@@ -1085,6 +1098,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ShapeExprDeclContext(ParserRuleContext):
 
@@ -1174,6 +1188,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ShapeExpressionContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1212,6 +1227,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class InlineShapeExpressionContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1249,6 +1265,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ShapeOrContext(ParserRuleContext):
 
@@ -1310,6 +1327,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class InlineShapeOrContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1369,6 +1387,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ShapeAndContext(ParserRuleContext):
 
@@ -1430,6 +1449,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class InlineShapeAndContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1490,6 +1510,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ShapeNotContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1540,6 +1561,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class InlineShapeNotContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1589,6 +1611,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ShapeAtomContext(ParserRuleContext):
 
@@ -1768,6 +1791,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class InlineShapeAtomContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -1946,6 +1970,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ShapeOrRefContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2001,6 +2026,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class InlineShapeOrRefContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2055,6 +2081,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ShapeRefContext(ParserRuleContext):
 
@@ -2119,6 +2146,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class InlineLitNodeConstraintContext(ParserRuleContext):
 
@@ -2348,6 +2376,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class LitNodeConstraintContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2420,6 +2449,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class InlineNonLitNodeConstraintContext(ParserRuleContext):
 
@@ -2533,6 +2563,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class NonLitNodeConstraintContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2606,6 +2637,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class NonLiteralKindContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2654,6 +2686,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class XsFacetContext(ParserRuleContext):
 
@@ -2709,6 +2742,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class StringFacetContext(ParserRuleContext):
 
@@ -2781,6 +2815,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class StringLengthContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2829,6 +2864,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class NumericFacetContext(ParserRuleContext):
 
@@ -2896,6 +2932,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class NumericRangeContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2948,6 +2985,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class NumericLengthContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -2993,6 +3031,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class RawNumericContext(ParserRuleContext):
 
@@ -3042,6 +3081,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ShapeDefinitionContext(ParserRuleContext):
 
@@ -3116,6 +3156,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class InlineShapeDefinitionContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -3182,6 +3223,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class QualifierContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -3245,6 +3287,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class ExtraPropertySetContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -3302,6 +3345,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class TripleExpressionContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -3339,6 +3383,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class OneOfTripleExprContext(ParserRuleContext):
 
@@ -3394,6 +3439,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class MultiElementOneOfContext(ParserRuleContext):
 
@@ -3451,6 +3497,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class GroupTripleExprContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -3506,6 +3553,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class SingleElementGroupContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -3552,6 +3600,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class MultiElementGroupContext(ParserRuleContext):
 
@@ -3618,6 +3667,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class UnaryTripleExprContext(ParserRuleContext):
 
@@ -3704,6 +3754,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class BracketedTripleExprContext(ParserRuleContext):
 
@@ -3793,6 +3844,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class TripleConstraintContext(ParserRuleContext):
 
@@ -3897,6 +3949,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class CardinalityContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -3919,6 +3972,8 @@ class ShExDocParser ( Parser ):
             super().__init__(parser)
             self.copyFrom(ctx)
 
+        def UNBOUNDED(self):
+            return self.getToken(ShExDocParser.UNBOUNDED, 0)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitStarCardinality" ):
@@ -4015,6 +4070,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class RepeatRangeContext(ParserRuleContext):
 
@@ -4125,6 +4181,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class SenseFlagsContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -4159,6 +4216,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ValueSetContext(ParserRuleContext):
 
@@ -4213,6 +4271,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ValueSetValueContext(ParserRuleContext):
 
@@ -4354,6 +4413,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class IriRangeContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -4421,6 +4481,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class IriExclusionContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -4472,6 +4533,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class LiteralRangeContext(ParserRuleContext):
 
@@ -4540,6 +4602,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class LiteralExclusionContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -4591,6 +4654,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class LanguageRangeContext(ParserRuleContext):
 
@@ -4717,6 +4781,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class LanguageExclusionContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -4768,6 +4833,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class IncludeContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -4807,6 +4873,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class AnnotationContext(ParserRuleContext):
 
@@ -4870,6 +4937,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class SemanticActionContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -4920,6 +4988,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class LiteralContext(ParserRuleContext):
 
@@ -4985,6 +5054,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class PredicateContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -5040,6 +5110,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class RdfTypeContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -5076,6 +5147,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class DatatypeContext(ParserRuleContext):
 
@@ -5114,6 +5186,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ShapeExprLabelContext(ParserRuleContext):
 
@@ -5170,6 +5243,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class TripleExprLabelContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -5225,6 +5299,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class NumericLiteralContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -5273,6 +5348,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class RdfLiteralContext(ParserRuleContext):
 
@@ -5333,6 +5409,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class BooleanLiteralContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -5378,6 +5455,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class StringContext(ParserRuleContext):
 
@@ -5430,6 +5508,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class IriContext(ParserRuleContext):
 
@@ -5485,6 +5564,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class PrefixedNameContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -5531,6 +5611,7 @@ class ShExDocParser ( Parser ):
             self.exitRule()
         return localctx
 
+
     class BlankNodeContext(ParserRuleContext):
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
@@ -5567,6 +5648,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class ExtensionContext(ParserRuleContext):
 
@@ -5625,6 +5707,7 @@ class ShExDocParser ( Parser ):
         finally:
             self.exitRule()
         return localctx
+
 
     class RestrictionsContext(ParserRuleContext):
 
