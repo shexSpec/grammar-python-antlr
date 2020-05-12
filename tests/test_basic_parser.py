@@ -26,11 +26,10 @@ SINGLE_FILE = bool(START_AT)
 #   you can use shexj.as_json() to print all or part of a ShEx Schema
 #   you can use "ctx.getText()" to get the span of any parser context
 
-LONG_UNICODE_LITERALS = "ANTLR Parsing issue"
+issue_43 = 'Broken test case - see shexTest issue #43'
 
 skip = {
-    # "1dotCodeWithEscapes1.shex": "rdflib quote issue",
-    # "1refbnode_with_spanning_PN_CHARS_BASE1.shex": LONG_UNICODE_LITERALS,
+    "start2RefS2.shex": issue_43
 }
 
 
