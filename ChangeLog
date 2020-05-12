@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+v0.8.0
+------
+
+* Change unit tests to reflect new layout
+* rdflib parsing issue is now fixed
 * Add python 8 tox tests
 * Change location of ShExDoc.g4 to match new organization layout in github
 * Fix issue #1.  Lock antlr version to 4.8
