@@ -1,6 +1,9 @@
 CHANGES
 =======
 
+* Add python 8 tox tests
+* Change location of ShExDoc.g4 to match new organization layout in github
+* Fix issue #1.  Lock antlr version to 4.8
 * Include updated authors and log
 * ~ migrating parsers to separate repos
 * Initial commit

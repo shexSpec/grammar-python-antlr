@@ -12,7 +12,7 @@ import requests
 from rdflib import Graph, URIRef, Namespace
 from rdflib.term import Identifier, BNode
 
-from tests import schemas_base, RDFLIB_PARSING_ISSUE_FIXED
+from tests import schemas_base
 from tests.utils.build_test_harness import ValidationTestCase
 
 # Comment this line out if you don't want context caching
@@ -48,11 +48,11 @@ ShexJToShexRTestCase.skip = {'coverage.ttl': 'Not ShEx',
                              'manifest.ttl': 'Not ShEx',
                              'meta.ttl': 'Not ShEx',
                              }
-if not RDFLIB_PARSING_ISSUE_FIXED:
-    issue_text = 'RDFLIB quote parsing issue not fixed'
-    ShexJToShexRTestCase.skip['1literalPattern_with_all_punctuation.ttl'] = issue_text
-    ShexJToShexRTestCase.skip['1val1STRING_LITERAL1_with_ECHAR_escapes.ttl'] = issue_text
-    ShexJToShexRTestCase.skip['1val1STRING_LITERAL1_with_all_punctuation.ttl'] = issue_text
+# issue_text = 'RDFLIB quote parsing issue not fixed'
+# ShexJToShexRTestCase.skip['1literalPattern_with_all_punctuation.ttl'] = issue_text
+# ShexJToShexRTestCase.skip['1val1STRING_LITERAL1_with_ECHAR_escapes.ttl'] = issue_text
+# ShexJToShexRTestCase.skip['1val1STRING_LITERAL1_with_all_punctuation.ttl'] = issue_text
+
 
 ShexJToShexRTestCase.start_at = START_AT if not START_AT or START_AT.endswith('.ttl') else START_AT + '.ttl'
 ShexJToShexRTestCase.single_file = SINGLE_FILE
