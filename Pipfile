@@ -7,11 +7,11 @@ verify_ssl = true
 yadict_compare = ">=1.2.0"
 
 [packages]
-antlr4-python3-runtime = "~=4.8"
+antlr4-python3-runtime = "~=4.9"
 jsonasobj = ">=1.2.1"
 requests = ">=2.21"
 rdflib = "~=5.0"
 rdflib-jsonld = "~=0.5"
 ShExJSG = "~=0.7"
-PyJSG = "~=0.10"
+PyJSG = ">=0.10.1"
 certifi = "*"

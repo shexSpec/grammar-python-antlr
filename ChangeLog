@@ -1,6 +1,8 @@
 CHANGES
 =======
 
+* Update ChangeLog and add  Mac .DS\_Store to .gitignore
+
 v0.8.2
 ------
 

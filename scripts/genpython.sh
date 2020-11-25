@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Running:
+#    . ./genpython.sh
 # Note: need antlr4.8  to run this!
 # see: http://www.antlr.org/download.html for details
 cp ../../grammar/ShExDoc.g4 .

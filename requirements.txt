@@ -10,10 +10,10 @@
 # `Pipfile.lock` and then regenerate `requirements*.txt`.
 ################################################################################
 
-antlr4-python3-runtime~=4.8
+antlr4-python3-runtime~=4.9
 certifi
 jsonasobj>=1.2.1
-pyjsg~=0.10
+pyjsg>=0.10.1
 rdflib-jsonld~=0.5
 rdflib~=5.0
 requests>=2.21
