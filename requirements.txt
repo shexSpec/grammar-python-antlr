@@ -11,10 +11,8 @@
 ################################################################################
 
 antlr4-python3-runtime~=4.9
-certifi
 jsonasobj>=1.2.1
-pyjsg>=0.10.1
+pyjsg>=0.11.6
 rdflib-jsonld~=0.5
 rdflib~=5.0
-requests>=2.21
-shexjsg~=0.7
+shexjsg>=0.7.1

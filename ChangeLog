@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* Update to run python 3.9 and antlr4 v 4.9
 * Update ChangeLog and add  Mac .DS\_Store to .gitignore
 
 v0.8.2
