@@ -101,3 +101,9 @@ ENV/
 Pipfile.lock
 
 .DS_Store
+
+# Files created by antlr
+pyshexc/parser/ShExDocLexer.py
+pyshexc/parser/ShExDocParser.py
+pyshexc/parser/ShExDocVisitor.py
+
