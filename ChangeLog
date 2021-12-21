@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+* Change rdflib-jsonld dependency to 0.6.0
+
+v0.8.3
+------
+
+* Update to latest pyjsg with python3.9 fixes
 * Update to run python 3.9 and antlr4 v 4.9
 * Update ChangeLog and add  Mac .DS\_Store to .gitignore
 
