@@ -19,6 +19,8 @@ This package converts the Shape Expression Compact (ShExC) into Python JSON Sche
 ```bash
 > pip install PyShExC
 ```
+You will also need the `shexSpec/grammar` repository. This contains the file `ShExDoc.g4`
+which is used to initialize the parser.
 
 ## Usage
 
