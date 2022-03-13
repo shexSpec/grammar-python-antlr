@@ -157,7 +157,7 @@ def generate(argv: Union[str, List[str]]) -> bool:
     if "://" in opts.infile:
         filebase = urlparse(opts.infile).path.split('/')[-1]
     else:
-        filebase = os.path.dirname(opts.infile) + str(os.path.basename(opts.infile))
+        filebase = os.path.dirname(opts.infile) + '/' + str(os.path.basename(opts.infile))
     filebase = filebase.rsplit('.', 1)[0]
     if opts.nojson:
         opts.jsonfile = None
