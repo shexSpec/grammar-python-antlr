@@ -9,9 +9,8 @@ requests = "*"
 
 [packages]
 chardet = "*"
-antlr4-python3-runtime = "~=4.9"
+antlr4-python3-runtime = "~=4.9.3"
 jsonasobj = ">=1.2.1"
-rdflib = ">=5.0.0"
 rdflib-shim = "*"
 ShExJSG = ">=0.8.1"
-pyjsg = ">=0.11.9"
+pyjsg = ">=0.11.10"
