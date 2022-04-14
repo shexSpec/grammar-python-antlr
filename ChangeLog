@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+v0.9.1
+------
+
+* Setting up a new tag
 * Update requirements.txt
 * Lock down antlr requirement and link to PyJSG that has the same lock
 * Give it an official name for dependency analysis
