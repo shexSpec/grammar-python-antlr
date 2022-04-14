@@ -1,6 +1,8 @@
 CHANGES
 =======
 
+* Give it an official name for dependency analysis
+* Update setup.py
 * Import the new rdflib\_shim
 * Import the new rdflib\_shim
 * Change rdflib-jsonld dependency to 0.6.0
