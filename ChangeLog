@@ -1,6 +1,8 @@
 CHANGES
 =======
 
+* Update requirements.txt
+* Lock down antlr requirement and link to PyJSG that has the same lock
 * Give it an official name for dependency analysis
 * Update setup.py
 * Import the new rdflib\_shim
