@@ -8,7 +8,7 @@ class Issue9TestCase(unittest.TestCase):
 
     """ Test that parser can process a URI """
     def test_fhir_uri(self):
-        success = generate('http://build.fhir.org/observation.shex -nr -nj')
+        success = generate('https://raw.githubusercontent.com/shexSpec/shexTest/main/doc/ShExR.shex -nr -nj')
         self.assertTrue(success)
 
     def test_fhir_local_file(self):
