@@ -16,7 +16,7 @@ class RdflibParserTestCase(unittest.TestCase):
         data_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__),
                                                       'data'
                                                       ))
-        g.load(os.path.join(data_file_path, '1literalPattern_with_all_punctuation.ttl'), format="turtle")
+        g.parse(os.path.join(data_file_path, '1literalPattern_with_all_punctuation.ttl'), format="turtle")
         self.assertTrue(True, "")
 
 
